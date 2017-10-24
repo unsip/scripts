@@ -3,9 +3,6 @@
 import click
 import re
 from links import LINKS
-# - read from filename
-# - find all flags
-# - create JS object
 
 TEMPLATE = """export const FLAGS = {
 NAME
@@ -13,7 +10,10 @@ NAME
 """
 
 def match_flags(data):
-    myMatcher = re.compile(r'([A-Z0-9_]+)\s+/\*\s*([^*]+)\s+\*/', re.MULTILINE)
+    flagname = r'^#define\s(X86_FEATURE_|X86_BUG_)([A-Z0-9_]+)' # finds 246
+    description = r'/\*\s*([^*]+)\s*\*/'
+    myRe = flagname + r'\s+[a-zA-Z0-9_(*+)\s]+\s' + description
+    myMatcher = re.compile(myRe, re.MULTILINE)
     matches = myMatcher.findall(data)
     return matches
 
@@ -35,7 +35,7 @@ def cli(name):
     matches = match_flags(data)
     entries = ''
 
-    for (flagname, description) in matches:
+    for (bam, flagname, description) in matches:
         desc_template = '{\n' + '     description: "{0}",\n'.format(description)
         links_template = '     links: ' + '[' + get_links(flagname) + ']\n' + '  }'
         entry = '  "{0}": {1}{2},\n'.format(flagname, desc_template,
