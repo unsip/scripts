@@ -17,7 +17,7 @@
 
 /*
  * Note: If the comment begins with a quoted string, that string is used
- * in /proc/cpuinfo instead of the macro name.  If the string is (hidden by default),
+ * in /proc/cpuinfo instead of the macro name.  If the string is "",
  * this feature bit is not displayed in /proc/cpuinfo at all.
  */
 
@@ -42,15 +42,15 @@
 #define X86_FEATURE_PSE36	( 0*32+17) /* 36-bit PSEs */
 #define X86_FEATURE_PN		( 0*32+18) /* Processor serial number */
 #define X86_FEATURE_CLFLUSH	( 0*32+19) /* CLFLUSH instruction */
-#define X86_FEATURE_DS		( 0*32+21) /* 'dts' Debug Store */
+#define X86_FEATURE_DS		( 0*32+21) /* "dts" Debug Store */
 #define X86_FEATURE_ACPI	( 0*32+22) /* ACPI via MSR */
 #define X86_FEATURE_MMX		( 0*32+23) /* Multimedia Extensions */
 #define X86_FEATURE_FXSR	( 0*32+24) /* FXSAVE/FXRSTOR, CR4.OSFXSR */
-#define X86_FEATURE_XMM		( 0*32+25) /* 'sse' */
-#define X86_FEATURE_XMM2	( 0*32+26) /* 'sse2' */
-#define X86_FEATURE_SELFSNOOP	( 0*32+27) /* 'ss' CPU self snoop */
+#define X86_FEATURE_XMM		( 0*32+25) /* "sse" */
+#define X86_FEATURE_XMM2	( 0*32+26) /* "sse2" */
+#define X86_FEATURE_SELFSNOOP	( 0*32+27) /* "ss" CPU self snoop */
 #define X86_FEATURE_HT		( 0*32+28) /* Hyper-Threading */
-#define X86_FEATURE_ACC		( 0*32+29) /* 'tm' Automatic clock control */
+#define X86_FEATURE_ACC		( 0*32+29) /* "tm" Automatic clock control */
 #define X86_FEATURE_IA64	( 0*32+30) /* IA-64 processor */
 #define X86_FEATURE_PBE		( 0*32+31) /* Pending Break Enable */
 
@@ -61,7 +61,7 @@
 #define X86_FEATURE_NX		( 1*32+20) /* Execute Disable */
 #define X86_FEATURE_MMXEXT	( 1*32+22) /* AMD MMX extensions */
 #define X86_FEATURE_FXSR_OPT	( 1*32+25) /* FXSAVE/FXRSTOR optimizations */
-#define X86_FEATURE_GBPAGES	( 1*32+26) /* 'pdpe1gb' GB pages */
+#define X86_FEATURE_GBPAGES	( 1*32+26) /* "pdpe1gb" GB pages */
 #define X86_FEATURE_RDTSCP	( 1*32+27) /* RDTSCP */
 #define X86_FEATURE_LM		( 1*32+29) /* Long Mode (x86-64) */
 #define X86_FEATURE_3DNOWEXT	( 1*32+30) /* AMD 3DNow! extensions */
@@ -79,24 +79,24 @@
 #define X86_FEATURE_CYRIX_ARR	( 3*32+ 2) /* Cyrix ARRs (= MTRRs) */
 #define X86_FEATURE_CENTAUR_MCR	( 3*32+ 3) /* Centaur MCRs (= MTRRs) */
 /* cpu types for specific tunings: */
-#define X86_FEATURE_K8		( 3*32+ 4) /* (hidden by default) Opteron, Athlon64 */
-#define X86_FEATURE_K7		( 3*32+ 5) /* (hidden by default) Athlon */
-#define X86_FEATURE_P3		( 3*32+ 6) /* (hidden by default) P3 */
-#define X86_FEATURE_P4		( 3*32+ 7) /* (hidden by default) P4 */
+#define X86_FEATURE_K8		( 3*32+ 4) /* "" Opteron, Athlon64 */
+#define X86_FEATURE_K7		( 3*32+ 5) /* "" Athlon */
+#define X86_FEATURE_P3		( 3*32+ 6) /* "" P3 */
+#define X86_FEATURE_P4		( 3*32+ 7) /* "" P4 */
 #define X86_FEATURE_CONSTANT_TSC ( 3*32+ 8) /* TSC ticks at a constant rate */
 #define X86_FEATURE_UP		( 3*32+ 9) /* smp kernel running on up */
 #define X86_FEATURE_ART		( 3*32+10) /* Platform has always running timer (ART) */
 #define X86_FEATURE_ARCH_PERFMON ( 3*32+11) /* Intel Architectural PerfMon */
 #define X86_FEATURE_PEBS	( 3*32+12) /* Precise-Event Based Sampling */
 #define X86_FEATURE_BTS		( 3*32+13) /* Branch Trace Store */
-#define X86_FEATURE_SYSCALL32	( 3*32+14) /* (hidden by default) syscall in ia32 userspace */
-#define X86_FEATURE_SYSENTER32	( 3*32+15) /* (hidden by default) sysenter in ia32 userspace */
+#define X86_FEATURE_SYSCALL32	( 3*32+14) /* "" syscall in ia32 userspace */
+#define X86_FEATURE_SYSENTER32	( 3*32+15) /* "" sysenter in ia32 userspace */
 #define X86_FEATURE_REP_GOOD	( 3*32+16) /* rep microcode works well */
-#define X86_FEATURE_MFENCE_RDTSC ( 3*32+17) /* (hidden by default) Mfence synchronizes RDTSC */
-#define X86_FEATURE_LFENCE_RDTSC ( 3*32+18) /* (hidden by default) Lfence synchronizes RDTSC */
+#define X86_FEATURE_MFENCE_RDTSC ( 3*32+17) /* "" Mfence synchronizes RDTSC */
+#define X86_FEATURE_LFENCE_RDTSC ( 3*32+18) /* "" Lfence synchronizes RDTSC */
 #define X86_FEATURE_ACC_POWER	( 3*32+19) /* AMD Accumulated Power Mechanism */
 #define X86_FEATURE_NOPL	( 3*32+20) /* The NOPL (0F 1F) instructions */
-#define X86_FEATURE_ALWAYS	( 3*32+21) /* (hidden by default) Always-present feature */
+#define X86_FEATURE_ALWAYS	( 3*32+21) /* "" Always-present feature */
 #define X86_FEATURE_XTOPOLOGY	( 3*32+22) /* cpu topology enum extensions */
 #define X86_FEATURE_TSC_RELIABLE ( 3*32+23) /* TSC is known to be reliable */
 #define X86_FEATURE_NONSTOP_TSC	( 3*32+24) /* TSC does not stop in C states */
@@ -108,11 +108,11 @@
 #define X86_FEATURE_TSC_KNOWN_FREQ ( 3*32+31) /* TSC has known frequency */
 
 /* Intel-defined CPU features, CPUID level 0x00000001 (ecx), word 4 */
-#define X86_FEATURE_XMM3	( 4*32+ 0) /* 'pni' SSE-3 */
+#define X86_FEATURE_XMM3	( 4*32+ 0) /* "pni" SSE-3 */
 #define X86_FEATURE_PCLMULQDQ	( 4*32+ 1) /* PCLMULQDQ instruction */
 #define X86_FEATURE_DTES64	( 4*32+ 2) /* 64-bit Debug Store */
-#define X86_FEATURE_MWAIT	( 4*32+ 3) /* 'monitor' Monitor/Mwait support */
-#define X86_FEATURE_DSCPL	( 4*32+ 4) /* 'ds_cpl' CPL Qual. Debug Store */
+#define X86_FEATURE_MWAIT	( 4*32+ 3) /* "monitor" Monitor/Mwait support */
+#define X86_FEATURE_DSCPL	( 4*32+ 4) /* "ds_cpl" CPL Qual. Debug Store */
 #define X86_FEATURE_VMX		( 4*32+ 5) /* Hardware virtualization */
 #define X86_FEATURE_SMX		( 4*32+ 6) /* Safer mode */
 #define X86_FEATURE_EST		( 4*32+ 7) /* Enhanced SpeedStep */
@@ -126,25 +126,25 @@
 #define X86_FEATURE_PDCM	( 4*32+15) /* Performance Capabilities */
 #define X86_FEATURE_PCID	( 4*32+17) /* Process Context Identifiers */
 #define X86_FEATURE_DCA		( 4*32+18) /* Direct Cache Access */
-#define X86_FEATURE_XMM4_1	( 4*32+19) /* 'sse4_1' SSE-4.1 */
-#define X86_FEATURE_XMM4_2	( 4*32+20) /* 'sse4_2' SSE-4.2 */
+#define X86_FEATURE_XMM4_1	( 4*32+19) /* "sse4_1" SSE-4.1 */
+#define X86_FEATURE_XMM4_2	( 4*32+20) /* "sse4_2" SSE-4.2 */
 #define X86_FEATURE_X2APIC	( 4*32+21) /* x2APIC */
 #define X86_FEATURE_MOVBE	( 4*32+22) /* MOVBE instruction */
 #define X86_FEATURE_POPCNT      ( 4*32+23) /* POPCNT instruction */
 #define X86_FEATURE_TSC_DEADLINE_TIMER	( 4*32+24) /* Tsc deadline timer */
 #define X86_FEATURE_AES		( 4*32+25) /* AES instructions */
 #define X86_FEATURE_XSAVE	( 4*32+26) /* XSAVE/XRSTOR/XSETBV/XGETBV */
-#define X86_FEATURE_OSXSAVE	( 4*32+27) /* (hidden by default) XSAVE enabled in the OS */
+#define X86_FEATURE_OSXSAVE	( 4*32+27) /* "" XSAVE enabled in the OS */
 #define X86_FEATURE_AVX		( 4*32+28) /* Advanced Vector Extensions */
 #define X86_FEATURE_F16C	( 4*32+29) /* 16-bit fp conversions */
 #define X86_FEATURE_RDRAND	( 4*32+30) /* The RDRAND instruction */
 #define X86_FEATURE_HYPERVISOR	( 4*32+31) /* Running on a hypervisor */
 
 /* VIA/Cyrix/Centaur-defined CPU features, CPUID level 0xC0000001, word 5 */
-#define X86_FEATURE_XSTORE	( 5*32+ 2) /* 'rng' RNG present (xstore) */
-#define X86_FEATURE_XSTORE_EN	( 5*32+ 3) /* 'rng_en' RNG enabled */
-#define X86_FEATURE_XCRYPT	( 5*32+ 6) /* 'ace' on-CPU crypto (xcrypt) */
-#define X86_FEATURE_XCRYPT_EN	( 5*32+ 7) /* 'ace_en' on-CPU crypto enabled */
+#define X86_FEATURE_XSTORE	( 5*32+ 2) /* "rng" RNG present (xstore) */
+#define X86_FEATURE_XSTORE_EN	( 5*32+ 3) /* "rng_en" RNG enabled */
+#define X86_FEATURE_XCRYPT	( 5*32+ 6) /* "ace" on-CPU crypto (xcrypt) */
+#define X86_FEATURE_XCRYPT_EN	( 5*32+ 7) /* "ace_en" on-CPU crypto enabled */
 #define X86_FEATURE_ACE2	( 5*32+ 8) /* Advanced Cryptography Engine v2 */
 #define X86_FEATURE_ACE2_EN	( 5*32+ 9) /* ACE v2 enabled */
 #define X86_FEATURE_PHE		( 5*32+10) /* PadLock Hash Engine */
@@ -213,7 +213,7 @@
 #define X86_FEATURE_VPID        ( 8*32+ 4) /* Intel Virtual Processor ID */
 
 #define X86_FEATURE_VMMCALL     ( 8*32+15) /* Prefer vmmcall to vmcall */
-#define X86_FEATURE_XENPV       ( 8*32+16) /* (hidden by default) Xen paravirtual guest */
+#define X86_FEATURE_XENPV       ( 8*32+16) /* "" Xen paravirtual guest */
 
 
 /* Intel-defined CPU features, CPUID level 0x00000007:0 (ebx), word 9 */
@@ -278,10 +278,10 @@
 /* AMD SVM Feature Identification, CPUID level 0x8000000a (edx), word 15 */
 #define X86_FEATURE_NPT		(15*32+ 0) /* Nested Page Table support */
 #define X86_FEATURE_LBRV	(15*32+ 1) /* LBR Virtualization support */
-#define X86_FEATURE_SVML	(15*32+ 2) /* 'svm_lock' SVM locking MSR */
-#define X86_FEATURE_NRIPS	(15*32+ 3) /* 'nrip_save' SVM next_rip save */
-#define X86_FEATURE_TSCRATEMSR  (15*32+ 4) /* 'tsc_scale' TSC scaling support */
-#define X86_FEATURE_VMCBCLEAN   (15*32+ 5) /* 'vmcb_clean' VMCB clean bits support */
+#define X86_FEATURE_SVML	(15*32+ 2) /* "svm_lock" SVM locking MSR */
+#define X86_FEATURE_NRIPS	(15*32+ 3) /* "nrip_save" SVM next_rip save */
+#define X86_FEATURE_TSCRATEMSR  (15*32+ 4) /* "tsc_scale" TSC scaling support */
+#define X86_FEATURE_VMCBCLEAN   (15*32+ 5) /* "vmcb_clean" VMCB clean bits support */
 #define X86_FEATURE_FLUSHBYASID (15*32+ 6) /* flush-by-ASID support */
 #define X86_FEATURE_DECODEASSISTS (15*32+ 7) /* Decode Assists support */
 #define X86_FEATURE_PAUSEFILTER (15*32+10) /* filtered pause intercept */
@@ -311,8 +311,8 @@
 #define X86_BUG_F00F		X86_BUG(0) /* Intel F00F */
 #define X86_BUG_FDIV		X86_BUG(1) /* FPU FDIV */
 #define X86_BUG_COMA		X86_BUG(2) /* Cyrix 6x86 coma */
-#define X86_BUG_AMD_TLB_MMATCH	X86_BUG(3) /* 'tlb_mmatch' AMD Erratum 383 */
-#define X86_BUG_AMD_APIC_C1E	X86_BUG(4) /* 'apic_c1e' AMD Erratum 400 */
+#define X86_BUG_AMD_TLB_MMATCH	X86_BUG(3) /* "tlb_mmatch" AMD Erratum 383 */
+#define X86_BUG_AMD_APIC_C1E	X86_BUG(4) /* "apic_c1e" AMD Erratum 400 */
 #define X86_BUG_11AP		X86_BUG(5) /* Bad local APIC aka 11AP */
 #define X86_BUG_FXSAVE_LEAK	X86_BUG(6) /* FXSAVE leaks FOP/FIP/FOP */
 #define X86_BUG_CLFLUSH_MONITOR	X86_BUG(7) /* AAI65, CLFLUSH required before MONITOR */
@@ -322,7 +322,7 @@
  * 64-bit kernels don't use X86_BUG_ESPFIX.  Make the define conditional
  * to avoid confusion.
  */
-#define X86_BUG_ESPFIX		X86_BUG(9) /* (hidden by default) IRET to 16-bit SS corrupts ESP/RSP high bits */
+#define X86_BUG_ESPFIX		X86_BUG(9) /* "" IRET to 16-bit SS corrupts ESP/RSP high bits */
 #endif
 #define X86_BUG_NULL_SEG	X86_BUG(10) /* Nulling a selector preserves the base */
 #define X86_BUG_SWAPGS_FENCE	X86_BUG(11) /* SWAPGS without input dep on GS */

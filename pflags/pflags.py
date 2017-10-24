@@ -26,6 +26,22 @@ def get_links(flag):
             strg += ', '
     return strg
 
+def correct_flag(flagname, description):
+    # "" means that flag is hidden by default from output
+    if '""' in description:
+        description = description.replace('""', '(hidden by default)')
+
+    # Match real flagnames (such as xmm == sse)
+    pattern = r'"(\w+)"\s'
+    match = re.findall(pattern, description)
+    if match:
+        description = re.sub(pattern, r'', description)
+        # Add 'monitor' as exception coz getting duplicate keys
+        if match[0] != 'monitor':
+            flagname = match[0]
+
+    return flagname, description
+
 @click.command()
 @click.argument('name')
 def cli(name):
@@ -36,8 +52,11 @@ def cli(name):
     entries = ''
 
     for (bam, flagname, description) in matches:
-        desc_template = '{\n' + '     description: "{0}",\n'.format(description)
+        # Getting links for current flag
         links_template = '     links: ' + '[' + get_links(flagname) + ']\n' + '  }'
+        # Correcting flagnames so that they match /proc/cpuinfo namings
+        flagname, description = correct_flag(flagname, description)
+        desc_template = '{\n' + '     description: "{0}",\n'.format(description)
         entry = '  "{0}": {1}{2},\n'.format(flagname.lower(), desc_template,
                 links_template)
         entries += entry
