@@ -11,7 +11,7 @@ NAME
 
 def match_flags(data):
     flagname = r'^#define\s(X86_FEATURE_|X86_BUG_)([A-Z0-9_]+)' # finds 246
-    description = r'/\*\s*([^*]+)\s*\*/'
+    description = r'/\*\s*([^*]+)\*/'
     myRe = flagname + r'\s+[a-zA-Z0-9_(*+)\s]+\s' + description
     myMatcher = re.compile(myRe, re.MULTILINE)
     matches = myMatcher.findall(data)
@@ -38,7 +38,7 @@ def cli(name):
     for (bam, flagname, description) in matches:
         desc_template = '{\n' + '     description: "{0}",\n'.format(description)
         links_template = '     links: ' + '[' + get_links(flagname) + ']\n' + '  }'
-        entry = '  "{0}": {1}{2},\n'.format(flagname, desc_template,
+        entry = '  "{0}": {1}{2},\n'.format(flagname.lower(), desc_template,
                 links_template)
         entries += entry
 

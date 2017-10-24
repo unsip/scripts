@@ -1,986 +1,987 @@
 export const FLAGS = {
-  "FPU": {
-     description: "Onboard FPU ",
+  "fpu": {
+     description: "Onboard FPU.",
      links: []
   },
-  "VME": {
-     description: "Virtual Mode Extensions ",
+  "vme": {
+     description: "Virtual Mode Extensions.",
      links: []
   },
-  "DE": {
-     description: "Debugging Extensions ",
+  "de": {
+     description: "Debugging Extensions.",
      links: []
   },
-  "PSE": {
-     description: "Page Size Extensions ",
+  "pse": {
+     description: "Page Size Extensions.",
      links: []
   },
-  "TSC": {
-     description: "Time Stamp Counter ",
+  "tsc": {
+     description: "Time Stamp Counter.",
      links: []
   },
-  "MSR": {
-     description: "Model-Specific Registers ",
+  "msr": {
+     description: "Model-Specific Registers.",
      links: []
   },
-  "PAE": {
-     description: "Physical Address Extensions ",
+  "pae": {
+     description: "Physical Address Extensions.",
      links: []
   },
-  "MCE": {
-     description: "Machine Check Exception ",
+  "mce": {
+     description: "Machine Check Exception.",
      links: []
   },
-  "CX8": {
-     description: "CMPXCHG8 instruction ",
+  "cx8": {
+     description: "CMPXCHG8 instruction.",
      links: []
   },
-  "APIC": {
-     description: "Onboard APIC ",
+  "apic": {
+     description: "Onboard APIC.",
      links: []
   },
-  "SEP": {
-     description: "SYSENTER/SYSEXIT ",
+  "sep": {
+     description: "SYSENTER/SYSEXIT.",
      links: []
   },
-  "MTRR": {
-     description: "Memory Type Range Registers ",
+  "mtrr": {
+     description: "Memory Type Range Registers.",
      links: []
   },
-  "PGE": {
-     description: "Page Global Enable ",
+  "pge": {
+     description: "Page Global Enable.",
      links: []
   },
-  "MCA": {
-     description: "Machine Check Architecture ",
+  "mca": {
+     description: "Machine Check Architecture.",
      links: []
   },
-  "CMOV": {
-     description: "CMOV instructions ",
+  "cmov": {
+     description: "CMOV instructions.",
      links: []
   },
-  "PAT": {
-     description: "Page Attribute Table ",
+  "pat": {
+     description: "Page Attribute Table.",
      links: []
   },
-  "PSE36": {
-     description: "36-bit PSEs ",
+  "pse36": {
+     description: "36-bit PSEs.",
      links: []
   },
-  "PN": {
-     description: "Processor serial number ",
+  "pn": {
+     description: "Processor serial number.",
      links: []
   },
-  "CLFLUSH": {
-     description: "CLFLUSH instruction ",
+  "clflush": {
+     description: "CLFLUSH instruction.",
      links: []
   },
-  "DS": {
-     description: "'dts' Debug Store ",
+  "ds": {
+     description: "'dts' Debug Store.",
      links: []
   },
-  "ACPI": {
-     description: "ACPI via MSR ",
+  "acpi": {
+     description: "ACPI via MSR.",
      links: []
   },
-  "MMX": {
-     description: "Multimedia Extensions ",
+  "mmx": {
+     description: "Multimedia Extensions.",
      links: []
   },
-  "FXSR": {
-     description: "FXSAVE/FXRSTOR, CR4.OSFXSR ",
+  "fxsr": {
+     description: "FXSAVE/FXRSTOR, CR4.OSFXSR.",
      links: []
   },
-  "XMM": {
-     description: "'sse' ",
+  "xmm": {
+     description: "'sse'.",
      links: []
   },
-  "XMM2": {
-     description: "'sse2' ",
+  "xmm2": {
+     description: "'sse2'.",
      links: []
   },
-  "SELFSNOOP": {
-     description: "'ss' CPU self snoop ",
+  "selfsnoop": {
+     description: "'ss' CPU self snoop.",
      links: []
   },
-  "HT": {
-     description: "Hyper-Threading ",
+  "ht": {
+     description: "Hyper-Threading.",
      links: []
   },
-  "ACC": {
-     description: "'tm' Automatic clock control ",
+  "acc": {
+     description: "'tm' Automatic clock control.",
      links: []
   },
-  "IA64": {
-     description: "IA-64 processor ",
+  "ia64": {
+     description: "IA-64 processor.",
      links: []
   },
-  "PBE": {
-     description: "Pending Break Enable ",
+  "pbe": {
+     description: "Pending Break Enable.",
      links: []
   },
-  "SYSCALL": {
-     description: "SYSCALL/SYSRET ",
+  "syscall": {
+     description: "SYSCALL/SYSRET.",
      links: []
   },
-  "MP": {
-     description: "MP Capable. ",
+  "mp": {
+     description: "MP Capable..",
      links: []
   },
-  "NX": {
-     description: "Execute Disable ",
+  "nx": {
+     description: "Execute Disable.",
      links: []
   },
-  "MMXEXT": {
-     description: "AMD MMX extensions ",
+  "mmxext": {
+     description: "AMD MMX extensions.",
      links: []
   },
-  "FXSR_OPT": {
-     description: "FXSAVE/FXRSTOR optimizations ",
+  "fxsr_opt": {
+     description: "FXSAVE/FXRSTOR optimizations.",
      links: []
   },
-  "GBPAGES": {
-     description: "'pdpe1gb' GB pages ",
+  "gbpages": {
+     description: "'pdpe1gb' GB pages.",
      links: []
   },
-  "RDTSCP": {
-     description: "RDTSCP ",
+  "rdtscp": {
+     description: "RDTSCP.",
      links: []
   },
-  "LM": {
-     description: "Long Mode (x86-64) ",
+  "lm": {
+     description: "Long Mode (x86-64).",
      links: []
   },
-  "3DNOWEXT": {
-     description: "AMD 3DNow! extensions ",
+  "3dnowext": {
+     description: "AMD 3DNow! extensions.",
      links: []
   },
-  "3DNOW": {
-     description: "3DNow! ",
+  "3dnow": {
+     description: "3DNow!.",
      links: []
   },
-  "RECOVERY": {
-     description: "CPU in recovery mode ",
+  "recovery": {
+     description: "CPU in recovery mode.",
      links: []
   },
-  "LONGRUN": {
-     description: "Longrun power control ",
+  "longrun": {
+     description: "Longrun power control.",
      links: []
   },
-  "LRTI": {
-     description: "LongRun table interface ",
+  "lrti": {
+     description: "LongRun table interface.",
      links: []
   },
-  "CXMMX": {
-     description: "Cyrix MMX extensions ",
+  "cxmmx": {
+     description: "Cyrix MMX extensions.",
      links: []
   },
-  "K6_MTRR": {
-     description: "AMD K6 nonstandard MTRRs ",
+  "k6_mtrr": {
+     description: "AMD K6 nonstandard MTRRs.",
      links: []
   },
-  "CYRIX_ARR": {
-     description: "Cyrix ARRs (= MTRRs) ",
+  "cyrix_arr": {
+     description: "Cyrix ARRs (= MTRRs).",
      links: []
   },
-  "CENTAUR_MCR": {
-     description: "Centaur MCRs (= MTRRs) ",
+  "centaur_mcr": {
+     description: "Centaur MCRs (= MTRRs).",
      links: []
   },
-  "K8": {
-     description: "(hidden by default) Opteron, Athlon64 ",
+  "k8": {
+     description: "(hidden by default) Opteron, Athlon64.",
      links: []
   },
-  "K7": {
-     description: "(hidden by default) Athlon ",
+  "k7": {
+     description: "(hidden by default) Athlon.",
      links: []
   },
-  "P3": {
-     description: "(hidden by default) P3 ",
+  "p3": {
+     description: "(hidden by default) P3.",
      links: []
   },
-  "P4": {
-     description: "(hidden by default) P4 ",
+  "p4": {
+     description: "(hidden by default) P4.",
      links: []
   },
-  "CONSTANT_TSC": {
-     description: "TSC ticks at a constant rate ",
+  "constant_tsc": {
+     description: "TSC ticks at a constant rate.",
      links: []
   },
-  "UP": {
-     description: "smp kernel running on up ",
+  "up": {
+     description: "smp kernel running on up.",
      links: []
   },
-  "ART": {
-     description: "Platform has always running timer (ART) ",
+  "art": {
+     description: "Platform has always running timer (ART).",
      links: []
   },
-  "ARCH_PERFMON": {
-     description: "Intel Architectural PerfMon ",
+  "arch_perfmon": {
+     description: "Intel Architectural PerfMon.",
      links: []
   },
-  "PEBS": {
-     description: "Precise-Event Based Sampling ",
+  "pebs": {
+     description: "Precise-Event Based Sampling.",
      links: []
   },
-  "BTS": {
-     description: "Branch Trace Store ",
+  "bts": {
+     description: "Branch Trace Store.",
      links: []
   },
-  "SYSCALL32": {
-     description: "(hidden by default) syscall in ia32 userspace ",
+  "syscall32": {
+     description: "(hidden by default) syscall in ia32 userspace.",
      links: []
   },
-  "SYSENTER32": {
-     description: "(hidden by default) sysenter in ia32 userspace ",
+  "sysenter32": {
+     description: "(hidden by default) sysenter in ia32 userspace.",
      links: []
   },
-  "REP_GOOD": {
-     description: "rep microcode works well ",
+  "rep_good": {
+     description: "rep microcode works well.",
      links: []
   },
-  "MFENCE_RDTSC": {
-     description: "(hidden by default) Mfence synchronizes RDTSC ",
+  "mfence_rdtsc": {
+     description: "(hidden by default) Mfence synchronizes RDTSC.",
      links: []
   },
-  "LFENCE_RDTSC": {
-     description: "(hidden by default) Lfence synchronizes RDTSC ",
+  "lfence_rdtsc": {
+     description: "(hidden by default) Lfence synchronizes RDTSC.",
      links: []
   },
-  "ACC_POWER": {
-     description: "AMD Accumulated Power Mechanism ",
+  "acc_power": {
+     description: "AMD Accumulated Power Mechanism.",
      links: []
   },
-  "NOPL": {
-     description: "The NOPL (0F 1F) instructions ",
+  "nopl": {
+     description: "The NOPL (0F 1F) instructions.",
      links: []
   },
-  "ALWAYS": {
-     description: "(hidden by default) Always-present feature ",
+  "always": {
+     description: "(hidden by default) Always-present feature.",
      links: []
   },
-  "XTOPOLOGY": {
-     description: "cpu topology enum extensions ",
+  "xtopology": {
+     description: "cpu topology enum extensions.",
      links: []
   },
-  "TSC_RELIABLE": {
-     description: "TSC is known to be reliable ",
+  "tsc_reliable": {
+     description: "TSC is known to be reliable.",
      links: []
   },
-  "NONSTOP_TSC": {
-     description: "TSC does not stop in C states ",
+  "nonstop_tsc": {
+     description: "TSC does not stop in C states.",
      links: []
   },
-  "CPUID": {
-     description: "CPU has CPUID instruction itself ",
+  "cpuid": {
+     description: "CPU has CPUID instruction itself.",
      links: []
   },
-  "EXTD_APICID": {
-     description: "has extended APICID (8 bits) ",
+  "extd_apicid": {
+     description: "has extended APICID (8 bits).",
      links: []
   },
-  "AMD_DCM": {
-     description: "multi-node processor ",
+  "amd_dcm": {
+     description: "multi-node processor.",
      links: []
   },
-  "APERFMPERF": {
-     description: "APERFMPERF ",
+  "aperfmperf": {
+     description: "APERFMPERF.",
      links: []
   },
-  "NONSTOP_TSC_S3": {
-     description: "TSC doesn't stop in S3 state ",
+  "nonstop_tsc_s3": {
+     description: "TSC doesn't stop in S3 state.",
      links: []
   },
-  "TSC_KNOWN_FREQ": {
-     description: "TSC has known frequency ",
+  "tsc_known_freq": {
+     description: "TSC has known frequency.",
      links: []
   },
-  "XMM3": {
-     description: "'pni' SSE-3 ",
+  "xmm3": {
+     description: "'pni' SSE-3.",
      links: []
   },
-  "PCLMULQDQ": {
-     description: "PCLMULQDQ instruction ",
+  "pclmulqdq": {
+     description: "PCLMULQDQ instruction.",
      links: []
   },
-  "DTES64": {
-     description: "64-bit Debug Store ",
+  "dtes64": {
+     description: "64-bit Debug Store.",
      links: []
   },
-  "MWAIT": {
-     description: "'monitor' Monitor/Mwait support ",
+  "mwait": {
+     description: "'monitor' Monitor/Mwait support.",
      links: []
   },
-  "DSCPL": {
-     description: "'ds_cpl' CPL Qual. Debug Store ",
+  "dscpl": {
+     description: "'ds_cpl' CPL Qual. Debug Store.",
      links: []
   },
-  "VMX": {
-     description: "Hardware virtualization ",
+  "vmx": {
+     description: "Hardware virtualization.",
      links: []
   },
-  "SMX": {
-     description: "Safer mode ",
+  "smx": {
+     description: "Safer mode.",
      links: []
   },
-  "EST": {
-     description: "Enhanced SpeedStep ",
+  "est": {
+     description: "Enhanced SpeedStep.",
      links: []
   },
-  "TM2": {
-     description: "Thermal Monitor 2 ",
+  "tm2": {
+     description: "Thermal Monitor 2.",
      links: []
   },
-  "SSSE3": {
-     description: "Supplemental SSE-3 ",
+  "ssse3": {
+     description: "Supplemental SSE-3.",
      links: []
   },
-  "CID": {
-     description: "Context ID ",
+  "cid": {
+     description: "Context ID.",
      links: []
   },
-  "SDBG": {
-     description: "Silicon Debug ",
+  "sdbg": {
+     description: "Silicon Debug.",
      links: []
   },
-  "FMA": {
-     description: "Fused multiply-add ",
+  "fma": {
+     description: "Fused multiply-add.",
      links: []
   },
-  "CX16": {
-     description: "CMPXCHG16B ",
+  "cx16": {
+     description: "CMPXCHG16B.",
      links: []
   },
-  "XTPR": {
-     description: "Send Task Priority Messages ",
+  "xtpr": {
+     description: "Send Task Priority Messages.",
      links: []
   },
-  "PDCM": {
-     description: "Performance Capabilities ",
+  "pdcm": {
+     description: "Performance Capabilities.",
      links: []
   },
-  "PCID": {
-     description: "Process Context Identifiers ",
+  "pcid": {
+     description: "Process Context Identifiers.",
      links: []
   },
-  "DCA": {
-     description: "Direct Cache Access ",
+  "dca": {
+     description: "Direct Cache Access.",
      links: []
   },
-  "XMM4_1": {
-     description: "'sse4_1' SSE-4.1 ",
+  "xmm4_1": {
+     description: "'sse4_1' SSE-4.1.",
      links: []
   },
-  "XMM4_2": {
-     description: "'sse4_2' SSE-4.2 ",
+  "xmm4_2": {
+     description: "'sse4_2' SSE-4.2.",
      links: []
   },
-  "X2APIC": {
-     description: "x2APIC ",
+  "x2apic": {
+     description: "x2APIC.",
      links: []
   },
-  "MOVBE": {
-     description: "MOVBE instruction ",
+  "movbe": {
+     description: "MOVBE instruction.",
      links: []
   },
-  "POPCNT": {
-     description: "POPCNT instruction ",
+  "popcnt": {
+     description: "POPCNT instruction.",
      links: []
   },
-  "TSC_DEADLINE_TIMER": {
-     description: "Tsc deadline timer ",
+  "tsc_deadline_timer": {
+     description: "Tsc deadline timer.",
      links: []
   },
-  "AES": {
-     description: "AES instructions ",
+  "aes": {
+     description: "AES instructions.",
      links: []
   },
-  "XSAVE": {
-     description: "XSAVE/XRSTOR/XSETBV/XGETBV ",
+  "xsave": {
+     description: "XSAVE/XRSTOR/XSETBV/XGETBV.",
      links: []
   },
-  "OSXSAVE": {
-     description: "(hidden by default) XSAVE enabled in the OS ",
+  "osxsave": {
+     description: "(hidden by default) XSAVE enabled in the OS.",
      links: []
   },
-  "AVX": {
-     description: "Advanced Vector Extensions ",
+  "avx": {
+     description: "Advanced Vector Extensions.",
      links: []
   },
-  "F16C": {
-     description: "16-bit fp conversions ",
+  "f16c": {
+     description: "16-bit fp conversions.",
      links: []
   },
-  "RDRAND": {
-     description: "The RDRAND instruction ",
+  "rdrand": {
+     description: "The RDRAND instruction.",
      links: []
   },
-  "HYPERVISOR": {
-     description: "Running on a hypervisor ",
+  "hypervisor": {
+     description: "Running on a hypervisor.",
      links: []
   },
-  "XSTORE": {
-     description: "'rng' RNG present (xstore) ",
+  "xstore": {
+     description: "'rng' RNG present (xstore).",
      links: []
   },
-  "XSTORE_EN": {
-     description: "'rng_en' RNG enabled ",
+  "xstore_en": {
+     description: "'rng_en' RNG enabled.",
      links: []
   },
-  "XCRYPT": {
-     description: "'ace' on-CPU crypto (xcrypt) ",
+  "xcrypt": {
+     description: "'ace' on-CPU crypto (xcrypt).",
      links: []
   },
-  "XCRYPT_EN": {
-     description: "'ace_en' on-CPU crypto enabled ",
+  "xcrypt_en": {
+     description: "'ace_en' on-CPU crypto enabled.",
      links: []
   },
-  "ACE2": {
-     description: "Advanced Cryptography Engine v2 ",
+  "ace2": {
+     description: "Advanced Cryptography Engine v2.",
      links: []
   },
-  "ACE2_EN": {
-     description: "ACE v2 enabled ",
+  "ace2_en": {
+     description: "ACE v2 enabled.",
      links: []
   },
-  "PHE": {
-     description: "PadLock Hash Engine ",
+  "phe": {
+     description: "PadLock Hash Engine.",
      links: []
   },
-  "PHE_EN": {
-     description: "PHE enabled ",
+  "phe_en": {
+     description: "PHE enabled.",
      links: []
   },
-  "PMM": {
-     description: "PadLock Montgomery Multiplier ",
+  "pmm": {
+     description: "PadLock Montgomery Multiplier.",
      links: []
   },
-  "PMM_EN": {
-     description: "PMM enabled ",
+  "pmm_en": {
+     description: "PMM enabled.",
      links: []
   },
-  "LAHF_LM": {
-     description: "LAHF/SAHF in long mode ",
+  "lahf_lm": {
+     description: "LAHF/SAHF in long mode.",
      links: []
   },
-  "CMP_LEGACY": {
-     description: "If yes HyperThreading not valid ",
+  "cmp_legacy": {
+     description: "If yes HyperThreading not valid.",
      links: []
   },
-  "SVM": {
-     description: "Secure virtual machine ",
+  "svm": {
+     description: "Secure virtual machine.",
      links: []
   },
-  "EXTAPIC": {
-     description: "Extended APIC space ",
+  "extapic": {
+     description: "Extended APIC space.",
      links: []
   },
-  "CR8_LEGACY": {
-     description: "CR8 in 32-bit mode ",
+  "cr8_legacy": {
+     description: "CR8 in 32-bit mode.",
      links: []
   },
-  "ABM": {
-     description: "Advanced bit manipulation ",
+  "abm": {
+     description: "Advanced bit manipulation.",
      links: []
   },
-  "SSE4A": {
-     description: "SSE-4A ",
+  "sse4a": {
+     description: "SSE-4A.",
      links: []
   },
-  "MISALIGNSSE": {
-     description: "Misaligned SSE mode ",
+  "misalignsse": {
+     description: "Misaligned SSE mode.",
      links: []
   },
-  "3DNOWPREFETCH": {
-     description: "3DNow prefetch instructions ",
+  "3dnowprefetch": {
+     description: "3DNow prefetch instructions.",
      links: []
   },
-  "OSVW": {
-     description: "OS Visible Workaround ",
+  "osvw": {
+     description: "OS Visible Workaround.",
      links: []
   },
-  "IBS": {
-     description: "Instruction Based Sampling ",
+  "ibs": {
+     description: "Instruction Based Sampling.",
      links: []
   },
-  "XOP": {
-     description: "extended AVX instructions ",
+  "xop": {
+     description: "extended AVX instructions.",
      links: []
   },
-  "SKINIT": {
-     description: "SKINIT/STGI instructions ",
+  "skinit": {
+     description: "SKINIT/STGI instructions.",
      links: []
   },
-  "WDT": {
-     description: "Watchdog timer ",
+  "wdt": {
+     description: "Watchdog timer.",
      links: []
   },
-  "LWP": {
-     description: "Light Weight Profiling ",
+  "lwp": {
+     description: "Light Weight Profiling.",
      links: []
   },
-  "FMA4": {
-     description: "4 operands MAC instructions ",
+  "fma4": {
+     description: "4 operands MAC instructions.",
      links: []
   },
-  "TCE": {
-     description: "translation cache extension ",
+  "tce": {
+     description: "translation cache extension.",
      links: []
   },
-  "NODEID_MSR": {
-     description: "NodeId MSR ",
+  "nodeid_msr": {
+     description: "NodeId MSR.",
      links: []
   },
-  "TBM": {
-     description: "trailing bit manipulations ",
+  "tbm": {
+     description: "trailing bit manipulations.",
      links: []
   },
-  "TOPOEXT": {
-     description: "topology extensions CPUID leafs ",
+  "topoext": {
+     description: "topology extensions CPUID leafs.",
      links: []
   },
-  "PERFCTR_CORE": {
-     description: "core performance counter extensions ",
+  "perfctr_core": {
+     description: "core performance counter extensions.",
      links: []
   },
-  "PERFCTR_NB": {
-     description: "NB performance counter extensions ",
+  "perfctr_nb": {
+     description: "NB performance counter extensions.",
      links: []
   },
-  "BPEXT": {
-     description: "data breakpoint extension ",
+  "bpext": {
+     description: "data breakpoint extension.",
      links: []
   },
-  "PTSC": {
-     description: "performance time-stamp counter ",
+  "ptsc": {
+     description: "performance time-stamp counter.",
      links: []
   },
-  "PERFCTR_LLC": {
-     description: "Last Level Cache performance counter extensions ",
+  "perfctr_llc": {
+     description: "Last Level Cache performance counter extensions.",
      links: []
   },
-  "MWAITX": {
-     description: "MWAIT extension (MONITORX/MWAITX) ",
+  "mwaitx": {
+     description: "MWAIT extension (MONITORX/MWAITX).",
      links: []
   },
-  "RING3MWAIT": {
-     description: "Ring 3 MONITOR/MWAIT ",
+  "ring3mwait": {
+     description: "Ring 3 MONITOR/MWAIT.",
      links: []
   },
-  "CPUID_FAULT": {
-     description: "Intel CPUID faulting ",
+  "cpuid_fault": {
+     description: "Intel CPUID faulting.",
      links: []
   },
-  "CPB": {
-     description: "AMD Core Performance Boost ",
+  "cpb": {
+     description: "AMD Core Performance Boost.",
      links: []
   },
-  "EPB": {
-     description: "IA32_ENERGY_PERF_BIAS support ",
+  "epb": {
+     description: "IA32_ENERGY_PERF_BIAS support.",
      links: []
   },
-  "CAT_L3": {
-     description: "Cache Allocation Technology L3 ",
+  "cat_l3": {
+     description: "Cache Allocation Technology L3.",
      links: []
   },
-  "CAT_L2": {
-     description: "Cache Allocation Technology L2 ",
+  "cat_l2": {
+     description: "Cache Allocation Technology L2.",
      links: []
   },
-  "CDP_L3": {
-     description: "Code and Data Prioritization L3 ",
+  "cdp_l3": {
+     description: "Code and Data Prioritization L3.",
      links: []
   },
-  "HW_PSTATE": {
-     description: "AMD HW-PState ",
+  "hw_pstate": {
+     description: "AMD HW-PState.",
      links: []
   },
-  "PROC_FEEDBACK": {
-     description: "AMD ProcFeedbackInterface ",
+  "proc_feedback": {
+     description: "AMD ProcFeedbackInterface.",
      links: []
   },
-  "SME": {
-     description: "AMD Secure Memory Encryption ",
+  "sme": {
+     description: "AMD Secure Memory Encryption.",
      links: []
   },
-  "INTEL_PPIN": {
-     description: "Intel Processor Inventory Number ",
+  "intel_ppin": {
+     description: "Intel Processor Inventory Number.",
      links: []
   },
-  "INTEL_PT": {
-     description: "Intel Processor Trace ",
+  "intel_pt": {
+     description: "Intel Processor Trace.",
      links: []
   },
-  "AVX512_4VNNIW": {
-     description: "AVX-512 Neural Network Instructions ",
+  "avx512_4vnniw": {
+     description: "AVX-512 Neural Network Instructions.",
      links: []
   },
-  "AVX512_4FMAPS": {
-     description: "AVX-512 Multiply Accumulation Single precision ",
+  "avx512_4fmaps": {
+     description: "AVX-512 Multiply Accumulation Single precision.",
      links: []
   },
-  "MBA": {
-     description: "Memory Bandwidth Allocation ",
+  "mba": {
+     description: "Memory Bandwidth Allocation.",
      links: []
   },
-  "TPR_SHADOW": {
-     description: "Intel TPR Shadow ",
+  "tpr_shadow": {
+     description: "Intel TPR Shadow.",
      links: []
   },
-  "VNMI": {
-     description: "Intel Virtual NMI ",
+  "vnmi": {
+     description: "Intel Virtual NMI.",
      links: []
   },
-  "FLEXPRIORITY": {
-     description: "Intel FlexPriority ",
+  "flexpriority": {
+     description: "Intel FlexPriority.",
      links: []
   },
-  "EPT": {
-     description: "Intel Extended Page Table ",
+  "ept": {
+     description: "Intel Extended Page Table.",
      links: []
   },
-  "VPID": {
-     description: "Intel Virtual Processor ID ",
+  "vpid": {
+     description: "Intel Virtual Processor ID.",
      links: []
   },
-  "VMMCALL": {
-     description: "Prefer vmmcall to vmcall ",
+  "vmmcall": {
+     description: "Prefer vmmcall to vmcall.",
      links: []
   },
-  "XENPV": {
-     description: "(hidden by default) Xen paravirtual guest ",
+  "xenpv": {
+     description: "(hidden by default) Xen paravirtual guest.",
      links: []
   },
-  "FSGSBASE": {
-     description: "{RD/WR}{FS/GS}BASE instructions",
+  "fsgsbase": {
+     description: "{RD/WR}{FS/GS}BASE instruction.",
      links: []
   },
-  "TSC_ADJUST": {
-     description: "TSC adjustment MSR 0x3b ",
+  "tsc_adjust": {
+     description: "TSC adjustment MSR 0x3b.",
      links: []
   },
-  "BMI1": {
-     description: "1st group bit manipulation extensions ",
+  "bmi1": {
+     description: "1st group bit manipulation extensions.",
      links: []
   },
-  "HLE": {
-     description: "Hardware Lock Elision ",
+  "hle": {
+     description: "Hardware Lock Elision.",
      links: []
   },
-  "AVX2": {
-     description: "AVX2 instructions ",
+  "avx2": {
+     description: "AVX2 instructions.",
      links: []
   },
-  "SMEP": {
-     description: "Supervisor Mode Execution Protection ",
+  "smep": {
+     description: "Supervisor Mode Execution Protection.",
      links: []
   },
-  "BMI2": {
-     description: "2nd group bit manipulation extensions ",
+  "bmi2": {
+     description: "2nd group bit manipulation extensions.",
      links: []
   },
-  "ERMS": {
-     description: "Enhanced REP MOVSB/STOSB ",
+  "erms": {
+     description: "Enhanced REP MOVSB/STOSB.",
      links: []
   },
-  "INVPCID": {
-     description: "Invalidate Processor Context ID ",
+  "invpcid": {
+     description: "Invalidate Processor Context ID.",
      links: []
   },
-  "RTM": {
-     description: "Restricted Transactional Memory ",
+  "rtm": {
+     description: "Restricted Transactional Memory.",
      links: []
   },
-  "CQM": {
-     description: "Cache QoS Monitoring ",
+  "cqm": {
+     description: "Cache QoS Monitoring.",
      links: []
   },
-  "MPX": {
-     description: "Memory Protection Extension ",
+  "mpx": {
+     description: "Memory Protection Extension.",
      links: []
   },
-  "RDT_A": {
-     description: "Resource Director Technology Allocation ",
+  "rdt_a": {
+     description: "Resource Director Technology Allocation.",
      links: []
   },
-  "AVX512F": {
-     description: "AVX-512 Foundation ",
+  "avx512f": {
+     description: "AVX-512 Foundation.",
      links: []
   },
-  "AVX512DQ": {
-     description: "AVX-512 DQ (Double/Quad granular) Instructions ",
+  "avx512dq": {
+     description: "AVX-512 DQ (Double/Quad granular) Instructions.",
      links: []
   },
-  "RDSEED": {
-     description: "The RDSEED instruction ",
+  "rdseed": {
+     description: "The RDSEED instruction.",
      links: []
   },
-  "ADX": {
-     description: "The ADCX and ADOX instructions ",
+  "adx": {
+     description: "The ADCX and ADOX instructions.",
      links: []
   },
-  "SMAP": {
-     description: "Supervisor Mode Access Prevention ",
+  "smap": {
+     description: "Supervisor Mode Access Prevention.",
      links: []
   },
-  "AVX512IFMA": {
-     description: "AVX-512 Integer Fused Multiply-Add instructions ",
+  "avx512ifma": {
+     description: "AVX-512 Integer Fused Multiply-Add instructions.",
      links: []
   },
-  "CLFLUSHOPT": {
-     description: "CLFLUSHOPT instruction ",
+  "clflushopt": {
+     description: "CLFLUSHOPT instruction.",
      links: []
   },
-  "CLWB": {
-     description: "CLWB instruction ",
+  "clwb": {
+     description: "CLWB instruction.",
      links: []
   },
-  "AVX512PF": {
-     description: "AVX-512 Prefetch ",
+  "avx512pf": {
+     description: "AVX-512 Prefetch.",
      links: []
   },
-  "AVX512ER": {
-     description: "AVX-512 Exponential and Reciprocal ",
+  "avx512er": {
+     description: "AVX-512 Exponential and Reciprocal.",
      links: []
   },
-  "AVX512CD": {
-     description: "AVX-512 Conflict Detection ",
+  "avx512cd": {
+     description: "AVX-512 Conflict Detection.",
      links: []
   },
-  "SHA_NI": {
-     description: "SHA1/SHA256 Instruction Extensions ",
+  "sha_ni": {
+     description: "SHA1/SHA256 Instruction Extensions.",
      links: []
   },
-  "AVX512BW": {
-     description: "AVX-512 BW (Byte/Word granular) Instructions ",
+  "avx512bw": {
+     description: "AVX-512 BW (Byte/Word granular) Instructions.",
      links: []
   },
-  "AVX512VL": {
-     description: "AVX-512 VL (128/256 Vector Length) Extensions ",
+  "avx512vl": {
+     description: "AVX-512 VL (128/256 Vector Length) Extensions.",
      links: []
   },
-  "XSAVEOPT": {
-     description: "XSAVEOPT ",
+  "xsaveopt": {
+     description: "XSAVEOPT.",
      links: []
   },
-  "XSAVEC": {
-     description: "XSAVEC ",
+  "xsavec": {
+     description: "XSAVEC.",
      links: []
   },
-  "XGETBV1": {
-     description: "XGETBV with ECX = 1 ",
+  "xgetbv1": {
+     description: "XGETBV with ECX = 1.",
      links: []
   },
-  "XSAVES": {
-     description: "XSAVES/XRSTORS ",
+  "xsaves": {
+     description: "XSAVES/XRSTORS.",
      links: []
   },
-  "CQM_LLC": {
-     description: "LLC QoS if 1 ",
+  "cqm_llc": {
+     description: "LLC QoS if 1.",
      links: []
   },
-  "CQM_OCCUP_LLC": {
-     description: "LLC occupancy monitoring if 1 ",
+  "cqm_occup_llc": {
+     description: "LLC occupancy monitoring if 1.",
      links: []
   },
-  "CQM_MBM_TOTAL": {
-     description: "LLC Total MBM monitoring ",
+  "cqm_mbm_total": {
+     description: "LLC Total MBM monitoring.",
      links: []
   },
-  "CQM_MBM_LOCAL": {
-     description: "LLC Local MBM monitoring ",
+  "cqm_mbm_local": {
+     description: "LLC Local MBM monitoring.",
      links: []
   },
-  "CLZERO": {
-     description: "CLZERO instruction ",
+  "clzero": {
+     description: "CLZERO instruction.",
      links: []
   },
-  "IRPERF": {
-     description: "Instructions Retired Count ",
+  "irperf": {
+     description: "Instructions Retired Count.",
      links: []
   },
-  "DTHERM": {
-     description: "Digital Thermal Sensor ",
+  "dtherm": {
+     description: "Digital Thermal Sensor.",
      links: []
   },
-  "IDA": {
-     description: "Intel Dynamic Acceleration ",
+  "ida": {
+     description: "Intel Dynamic Acceleration.",
      links: []
   },
-  "ARAT": {
-     description: "Always Running APIC Timer ",
+  "arat": {
+     description: "Always Running APIC Timer.",
      links: []
   },
-  "PLN": {
-     description: "Intel Power Limit Notification ",
+  "pln": {
+     description: "Intel Power Limit Notification.",
      links: []
   },
-  "PTS": {
-     description: "Intel Package Thermal Status ",
+  "pts": {
+     description: "Intel Package Thermal Status.",
      links: []
   },
-  "HWP": {
-     description: "Intel Hardware P-states ",
+  "hwp": {
+     description: "Intel Hardware P-states.",
      links: []
   },
-  "HWP_NOTIFY": {
-     description: "HWP Notification ",
+  "hwp_notify": {
+     description: "HWP Notification.",
      links: []
   },
-  "HWP_ACT_WINDOW": {
-     description: "HWP Activity Window ",
+  "hwp_act_window": {
+     description: "HWP Activity Window.",
      links: []
   },
-  "HWP_EPP": {
-     description: "HWP Energy Perf. Preference ",
+  "hwp_epp": {
+     description: "HWP Energy Perf. Preference.",
      links: []
   },
-  "HWP_PKG_REQ": {
-     description: "HWP Package Level Request ",
+  "hwp_pkg_req": {
+     description: "HWP Package Level Request.",
      links: []
   },
-  "NPT": {
-     description: "Nested Page Table support ",
+  "npt": {
+     description: "Nested Page Table support.",
      links: []
   },
-  "LBRV": {
-     description: "LBR Virtualization support ",
+  "lbrv": {
+     description: "LBR Virtualization support.",
      links: []
   },
-  "SVML": {
-     description: "'svm_lock' SVM locking MSR ",
+  "svml": {
+     description: "'svm_lock' SVM locking MSR.",
      links: []
   },
-  "NRIPS": {
-     description: "'nrip_save' SVM next_rip save ",
+  "nrips": {
+     description: "'nrip_save' SVM next_rip save.",
      links: []
   },
-  "TSCRATEMSR": {
-     description: "'tsc_scale' TSC scaling support ",
+  "tscratemsr": {
+     description: "'tsc_scale' TSC scaling support.",
      links: []
   },
-  "VMCBCLEAN": {
-     description: "'vmcb_clean' VMCB clean bits support ",
+  "vmcbclean": {
+     description: "'vmcb_clean' VMCB clean bits support.",
      links: []
   },
-  "FLUSHBYASID": {
-     description: "flush-by-ASID support ",
+  "flushbyasid": {
+     description: "flush-by-ASID support.",
      links: []
   },
-  "DECODEASSISTS": {
-     description: "Decode Assists support ",
+  "decodeassists": {
+     description: "Decode Assists support.",
      links: []
   },
-  "PAUSEFILTER": {
-     description: "filtered pause intercept ",
+  "pausefilter": {
+     description: "filtered pause intercept.",
      links: []
   },
-  "PFTHRESHOLD": {
-     description: "pause filter threshold ",
+  "pfthreshold": {
+     description: "pause filter threshold.",
      links: []
   },
-  "AVIC": {
-     description: "Virtual Interrupt Controller ",
+  "avic": {
+     description: "Virtual Interrupt Controller.",
      links: []
   },
-  "V_VMSAVE_VMLOAD": {
-     description: "Virtual VMSAVE VMLOAD ",
+  "v_vmsave_vmload": {
+     description: "Virtual VMSAVE VMLOAD.",
      links: []
   },
-  "VGIF": {
-     description: "Virtual GIF ",
+  "vgif": {
+     description: "Virtual GIF.",
      links: []
   },
-  "AVX512VBMI": {
-     description: "AVX512 Vector Bit Manipulation instructions",
+  "avx512vbmi": {
+     description: "AVX512 Vector Bit Manipulation instruction.",
      links: []
   },
-  "PKU": {
-     description: "Protection Keys for Userspace ",
+  "pku": {
+     description: "Protection Keys for Userspace.",
      links: []
   },
-  "OSPKE": {
-     description: "OS Protection Keys Enable ",
+  "ospke": {
+     description: "OS Protection Keys Enable.",
      links: []
   },
-  "AVX512_VPOPCNTDQ": {
-     description: "POPCNT for vectors of DW/QW ",
+  "avx512_vpopcntdq": {
+     description: "POPCNT for vectors of DW/QW.",
      links: []
   },
-  "LA57": {
-     description: "5-level page tables ",
+  "la57": {
+     description: "5-level page tables.",
      links: []
   },
-  "RDPID": {
-     description: "RDPID instruction ",
+  "rdpid": {
+     description: "RDPID instruction.",
      links: []
   },
-  "OVERFLOW_RECOV": {
-     description: "MCA overflow recovery support ",
+  "overflow_recov": {
+     description: "MCA overflow recovery support.",
      links: []
   },
-  "SUCCOR": {
-     description: "Uncorrectable error containment and recovery ",
+  "succor": {
+     description: "Uncorrectable error containment and recovery.",
      links: []
   },
-  "SMCA": {
-     description: "Scalable MCA ",
+  "smca": {
+     description: "Scalable MCA.",
      links: []
   },
-  "F00F": {
-     description: "Intel F00F ",
+  "f00f": {
+     description: "Intel F00F.",
      links: []
   },
-  "FDIV": {
-     description: "FPU FDIV ",
+  "fdiv": {
+     description: "FPU FDIV.",
      links: []
   },
-  "COMA": {
-     description: "Cyrix 6x86 coma ",
+  "coma": {
+     description: "Cyrix 6x86 coma.",
      links: []
   },
-  "AMD_TLB_MMATCH": {
-     description: "'tlb_mmatch' AMD Erratum 383 ",
+  "amd_tlb_mmatch": {
+     description: "'tlb_mmatch' AMD Erratum 383.",
      links: []
   },
-  "AMD_APIC_C1E": {
-     description: "'apic_c1e' AMD Erratum 400 ",
+  "amd_apic_c1e": {
+     description: "'apic_c1e' AMD Erratum 400.",
      links: []
   },
-  "11AP": {
-     description: "Bad local APIC aka 11AP ",
+  "11ap": {
+     description: "Bad local APIC aka 11AP.",
      links: []
   },
-  "FXSAVE_LEAK": {
-     description: "FXSAVE leaks FOP/FIP/FOP ",
+  "fxsave_leak": {
+     description: "FXSAVE leaks FOP/FIP/FOP.",
      links: []
   },
-  "CLFLUSH_MONITOR": {
-     description: "AAI65, CLFLUSH required before MONITOR ",
+  "clflush_monitor": {
+     description: "AAI65, CLFLUSH required before MONITOR.",
      links: []
   },
-  "SYSRET_SS_ATTRS": {
-     description: "SYSRET doesn't fix up SS attrs ",
+  "sysret_ss_attrs": {
+     description: "SYSRET doesn't fix up SS attrs.",
      links: []
   },
-  "ESPFIX": {
-     description: "(hidden by default) IRET to 16-bit SS corrupts ESP/RSP high bits ",
+  "espfix": {
+     description: "(hidden by default) IRET to 16-bit SS corrupts ESP/RSP high bits.",
      links: []
   },
-  "NULL_SEG": {
-     description: "Nulling a selector preserves the base ",
+  "null_seg": {
+     description: "Nulling a selector preserves the base.",
      links: []
   },
-  "SWAPGS_FENCE": {
-     description: "SWAPGS without input dep on GS ",
+  "swapgs_fence": {
+     description: "SWAPGS without input dep on GS.",
      links: []
   },
-  "MONITOR": {
-     description: "IPI required to wake up remote CPU ",
+  "monitor": {
+     description: "IPI required to wake up remote CPU.",
      links: []
   },
-  "AMD_E400": {
-     description: "CPU is among the affected by Erratum 400 ",
+  "amd_e400": {
+     description: "CPU is among the affected by Erratum 400.",
      links: []
-  }
+  },
+
 }
