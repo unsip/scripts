@@ -1,8 +1,9 @@
 # Process /proc/cpuinfo flags data
 
+from links import LINKS
+from sane_descriptions import SANE_DESCRIPTIONS
 import click
 import re
-from links import LINKS
 
 TEMPLATE = """export const FLAGS = {
 NAME
@@ -27,6 +28,8 @@ def get_links(flag):
     return strg
 
 def correct_flag(flagname, description):
+    flagname = flagname.lower()
+
     # "" means that flag is hidden by default from output
     if '""' in description:
         description = description.replace('""', '(hidden by default)')
@@ -39,6 +42,14 @@ def correct_flag(flagname, description):
         # Add 'monitor' as exception coz getting duplicate keys
         if match[0] != 'monitor':
             flagname = match[0]
+
+    # Apply sane description if there is one
+    if flagname in SANE_DESCRIPTIONS.keys():
+        description = SANE_DESCRIPTIONS[flagname]
+
+    # Substitude ending spaces with dots for consistency
+    if description[len(description) - 1] == ' ':
+        description = description[:len(description) - 1] + '.'
 
     return flagname, description
 
@@ -57,7 +68,7 @@ def cli(name):
         # Correcting flagnames so that they match /proc/cpuinfo namings
         flagname, description = correct_flag(flagname, description)
         desc_template = '{\n' + '     description: "{0}",\n'.format(description)
-        entry = '  "{0}": {1}{2},\n'.format(flagname.lower(), desc_template,
+        entry = '  "{0}": {1}{2},\n'.format(flagname, desc_template,
                 links_template)
         entries += entry
 
