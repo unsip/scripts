@@ -22,7 +22,7 @@ def get_links(flag):
     strg = ''
     links = LINKS[flag]
     for i, link in enumerate(links):
-        strg += '"' + link + '"'
+        strg += '["' + link[0] + '", "' + link[1] + '"]'
         if i != len(links) - 1:
             strg += ', '
     return strg
